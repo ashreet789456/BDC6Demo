@@ -1,0 +1,37 @@
+package SeleniumTest1;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+public class Exercise {
+	 	WebDriver driver;
+		@BeforeTest
+		  	public void configureBrowser() 
+		  {
+			  driver=drivers.configureDriver("chrome");
+			  driver.manage().window().maximize();
+			  driver.get("http://10.232.237.143:443/TestMeApp/");
+		  }
+		@Test
+		public void f() 
+		{
+			driver.findElement(By.xpath("//input[@id='myInput']")).sendKeys("wear");
+			Actions act=new Actions(driver);
+			act.moveToElement(driver.
+		    findElement(By.xpath("//input[contains(placeholder(),'wear')]"))).
+			moveToElement(driver.
+				   findElement(By.xpath("//input[contains(name(),'Summer wear')]"))).click();
+			driver.findElement(By.xpath("//input[@value='FIND DETAILS']")).click();
+		}
+
+		@AfterTest
+		public void closeApp()  
+		{
+			driver.close();
+		}
+
+}

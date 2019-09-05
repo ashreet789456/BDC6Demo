@@ -1,0 +1,222 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Registered user access to cart in DemoWebshop",
+        "description": "",
+        "id": "bdc-validation-on-demowebshop;registered-user-access-to-cart-in-demowebshop",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1339300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user launched demo webshop app in chrome browser",
+            "match": {
+              "location": "Demo_01_01_definitions.user_launched_demo_webshop_app_in_chrome_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 156500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user searches for the item of his choice",
+            "match": {
+              "location": "Demo_01_01_definitions.user_searches_for_the_item_of_his_choice()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 99100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "adds that item to the cart",
+            "match": {
+              "location": "Demo_01_01_definitions.adds_that_item_to_the_cart()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@sanity"
+          }
+        ]
+      },
+      {
+        "line": 11,
+        "name": "Registered user access track the ordered item in DemoWebshop",
+        "description": "",
+        "id": "bdc-validation-on-demowebshop;registered-user-access-track-the-ordered-item-in-demowebshop",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 155200,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user has already placed a order for his favourite item",
+            "match": {
+              "location": "Demo_01_01_definitions.user_has_already_placed_a_order_for_his_favourite_item()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 75700,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user tries access the order tracking dashboard",
+            "match": {
+              "location": "Demo_01_01_definitions.user_tries_access_the_order_tracking_dashboard()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 49000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "identifies the state of the order",
+            "match": {
+              "location": "Demo_01_01_definitions.identifies_the_state_of_the_order()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "BDC Validation on demowebshop",
+    "description": "",
+    "id": "bdc-validation-on-demowebshop",
+    "keyword": "Feature",
+    "uri": "C:/Users/a.ningayya.salimath/Selenium week 3/MyDemo_01_Cucumber/Demo_01/Demo_01_01.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Users choice to opt for an account",
+        "description": "",
+        "id": "guest-user-actions-in-demo-webshop;users-choice-to-opt-for-an-account",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 115600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user acess the sign-up page",
+            "match": {
+              "location": "Demo_01_02_definiions.user_acess_the_sign_up_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 115300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "gets the credentials",
+            "match": {
+              "location": "Demo_01_02_definiions.gets_the_credentials()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@sanity"
+          }
+        ]
+      },
+      {
+        "line": 10,
+        "name": "Registered User access to login page of the Demo Webshop",
+        "description": "",
+        "id": "guest-user-actions-in-demo-webshop;registered-user-access-to-login-page-of-the-demo-webshop",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 159200,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user has valid account creds for DemoWebshop",
+            "match": {
+              "location": "Demo_01_02_definiions.user_has_valid_account_creds_for_DemoWebshop()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 68600,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "provide the valid creds",
+            "match": {
+              "location": "Demo_01_02_definiions.provide_the_valid_creds()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 62100,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "verifies the state for the login status",
+            "match": {
+              "location": "Demo_01_02_definiions.verifies_the_state_for_the_login_status()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "Guest user actions in Demo Webshop",
+    "description": "",
+    "id": "guest-user-actions-in-demo-webshop",
+    "keyword": "Feature",
+    "uri": "C:/Users/a.ningayya.salimath/Selenium week 3/MyDemo_01_Cucumber/Demo_01/Demo_01_02.feature",
+    "tags": []
+  }
+]

@@ -1,0 +1,13 @@
+Feature: BDC Demo for parameterization
+
+Scenario Outline: I want to cross check the multipl users access for login
+
+Given I am launching the webshop url
+Then I will check on Login
+When I enter username"<>" and password "<>"
+And click on submit button
+Then verify for user account status
+  
+      | name  | value | status  |
+      | ranji123@gmail.com |     Password | success |
+      | ashreet21@gmail.com |     ASalimath@21 | success    |

@@ -1,0 +1,18 @@
+package mybdcrunner;
+
+import org.junit.runner.RunWith;
+
+import cucumber.api.CucumberOptions;
+import cucumber.api.junit.Cucumber;
+
+@RunWith(Cucumber.class)
+@CucumberOptions(features="Demo_01",glue="bdcstepdefinitions")
+public class BDCRunner {
+
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,9 @@
+package SeleniumTest1;
+
+import org.testng.annotations.Test;
+
+public class extentreports {
+  @Test
+  public void f() {
+  }
+}

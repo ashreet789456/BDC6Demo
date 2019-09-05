@@ -1,0 +1,9 @@
+package SeleniumTest1;
+
+import org.testng.annotations.Test;
+
+public class writetoExcel {
+  @Test
+  public void f() {
+  }
+}

@@ -1,0 +1,15 @@
+Feature: BDC Validation on demowebshop
+
+
+Scenario: Registered user access to cart in DemoWebshop
+
+Given user launched demo webshop app in chrome browser
+Then user searches for the item of his choice
+And adds that item to the cart
+
+
+Scenario:Registered user access track the ordered item in DemoWebshop
+
+Given user had already placed
+Then user tries access the order tracking dashboard
+And identifies the state of the order

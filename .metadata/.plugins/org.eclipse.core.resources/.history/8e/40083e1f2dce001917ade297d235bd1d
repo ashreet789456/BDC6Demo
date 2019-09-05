@@ -1,0 +1,15 @@
+Feature: Guest user actions in Demo Webshop
+
+
+Scenario: Users choice to opt for an account
+
+Given user acess the sign_up page
+And gets the credentials
+
+
+Scenario:Registered user access to login page of the Demo Webshop
+
+Given user has valid account creds for DemoWebshop
+And provide the valid creds
+Then verifies the state for the login status
+
